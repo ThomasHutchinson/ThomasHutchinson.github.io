@@ -12,7 +12,7 @@ if(empty($_POST['name'])  		||
 
 $name = $_POST['name'];
 $email_address = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-if ($email === FALSE) {
+if ($email_address === FALSE) {
     echo 'Invalid email';
     exit(1);
 }
